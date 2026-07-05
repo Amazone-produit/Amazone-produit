@@ -543,6 +543,13 @@
             border-top: 1px solid #232f3e;
             font-size: 0.85rem;
         }
+      .image-verticale {
+    width: 100%;             /* L'image prend toute la largeur de son conteneur */
+    max-width: 350px;        /* Vous pouvez ajuster cette taille max selon vos besoins */
+    aspect-ratio: 9 / 16;    /* Force le format vertical 9:16 */
+    object-fit: cover;       /* Coupe proprement les bords si l'image d'origine n'est pas en 9:16 */
+    border-radius: 8px;      /* Optionnel : pour arrondir légèrement les coins */
+}  
     </style>
 </head>
 <body>
